@@ -1,0 +1,15 @@
+{
+  "name": "rabbitmq-demo",
+  "version": "1.0.0",
+  "description": "Demo RabbitMQ con Node.js - ecommerce con pedidos, pagos, notificaciones y logs",
+  "scripts": {
+    "producer":      "node producer.js",
+    "pedidos":       "node consumers/pedidos-consumer.js",
+    "pagos":         "node consumers/pagos-consumer.js",
+    "notificaciones":"node consumers/notificaciones-consumer.js",
+    "logs":          "node consumers/logs-consumer.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.3"
+  }
+}

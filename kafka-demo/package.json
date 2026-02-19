@@ -1,0 +1,14 @@
+{
+  "name": "kafka-demo",
+  "version": "1.0.0",
+  "description": "Demo de Kafka con Node.js - sistema de pedidos con retry y DLQ",
+  "scripts": {
+    "producer": "node producer.js",
+    "consumer": "node consumer.js",
+    "retry": "node retry-consumer.js",
+    "dlq": "node dlq-consumer.js"
+  },
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  }
+}

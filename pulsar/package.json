@@ -1,0 +1,15 @@
+{
+  "name": "pulsar-demo",
+  "version": "1.0.0",
+  "description": "Demo Apache Pulsar con Node.js - streaming de eventos + colas de tareas",
+  "scripts": {
+    "streaming-producer":  "node producers/streaming-producer.js",
+    "queue-producer":      "node producers/queue-producer.js",
+    "analytics":           "node consumers/analytics-consumer.js",
+    "recomendaciones":     "node consumers/recomendaciones-consumer.js",
+    "notificaciones":      "node consumers/notificaciones-consumer.js"
+  },
+  "dependencies": {
+    "pulsar-client": "^1.10.0"
+  }
+}
